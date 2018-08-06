@@ -4,6 +4,16 @@ import java.math.BigInteger;
 import java.util.Map;
 
 public abstract class IsoHelper {
+    public static String isomsgToString(String mti, Map<Integer, String> isomsg){
+        StringBuilder hasil = new StringBuilder();
+        hasil.append(mti);
+        hasil.append(hitungBitmap(isomsg).toString(16).toUpperCase());
+        isomsg.keySet().stream()
+        .sorted()
+        .forEach(x -> hasil.append(isomsg.get(x)));
+        return hasil.toString();
+    }
+
     public static BigInteger hitungBitmap(Map<Integer, String> isomsg){
         BigInteger hasil = BigInteger.ZERO;
 
