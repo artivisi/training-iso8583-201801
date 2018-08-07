@@ -16,11 +16,49 @@ Materi:
     * ZMK
     * ZPK
 
-* Cara Kerja PIN di ATM/EDC
+* Inisialisasi HSM
 
-    * PIN Offset
-    * PIN Block
-    * PIN Verification
+    * Key Custodian
+    * LMK Generation
+    * Key Component
+
+![Inisialisasi HSM](img/inisialisasi-hsm.jpg)
+
+* Inisialisasi ATM/EDC
+
+    * Generate TMK
+    * Install TMK di Perangkat
+    * Generate TPK
+    * Key Exchange TPK
+
+![Inisialisasi ATM/EDC](img/inisialisasi-atm.jpg)
+
+* Generate PIN
+
+    * Generate PIN
+    * Print PIN Mailer
+    * PIN offset
+
+* Verifikasi PIN di ATM
+
+    * Entri PIN
+    * Generate PIN block
+    * Encrypt PIN block dengan TPK
+    * Kirim ke ATM Server
+    * Verifikasi di HSM
+
+![Generate dan Validasi PIN](img/pin-generate-validate.jpg)
+
+* Inisialisasi Zone
+
+    * Generate ZMK
+    * Install ZMK di HSM
+    * Key Exchange ZPK
+
+* PIN Translation
+
+    * Input PIN
+    * Generate PIN block
 
 * Implementasi beberapa transaksi yang sering dilakukan
 
@@ -43,3 +81,4 @@ Materi:
 * http://jpos.org/w/index.php/HSM_basics
 * http://jpos.org/w/index.php/HSM_basics_continued
 * https://github.com/endymuhardin/training-iso8583-jpos-2016-02/blob/master/materi/hsm.md
+* http://sidekick.windforwings.com/2008/02/how-are-atm-pins-validated.html
