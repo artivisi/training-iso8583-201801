@@ -32,6 +32,11 @@ Materi:
         * Sebagai issuer (mengeluarkan uang)
         * Sebagai beneficiary (menerima uang)
 
+## Simulator HSM ##
+
+* https://archive.codeplex.com/?p=thalessim
+* http://www.m-sinergi.com/hairi/
+
 ## Referensi ##
 
 * https://github.com/gjyoung1974/Thales9kUtil
