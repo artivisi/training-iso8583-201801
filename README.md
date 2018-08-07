@@ -55,10 +55,17 @@ Materi:
     * Install ZMK di HSM
     * Key Exchange ZPK
 
+![Inisialisasi Zone](img/inisialisasi-zone.jpg)
+
 * PIN Translation
 
     * Input PIN
     * Generate PIN block
+    * Encrypt PIN block dengan TPK
+    * Translate enkripsi TPK menjadi ZPK
+    * Kirim pin block under ZPK ke mitra
+
+![PIN Translation](img/pin-translation.jpg)
 
 * Implementasi beberapa transaksi yang sering dilakukan
 
